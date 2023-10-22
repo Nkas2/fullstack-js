@@ -1,0 +1,34 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJuYXlhbmRyYSIsImVtYWlsIjoibmF5YW5kcmFAZ21haWwuY29tIiwiaWF0IjoxNjk3OTU0OTgyLCJleHAiOjE2OTc5NTUwMDJ9.rz353Lm_KY3nV_ChrDSPNYMFY6mIccz_GTjrNUdciJc
+
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "name" : "nayandra 2",
+  "email" : "nayandra@gmail.com",
+  "password" : "123456",
+  "confPassword" : "123456"
+}
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email" : "nayandra@gmail.com",
+  "password" : "123456"
+}
+
+###
+
+GET http://localhost:5000/token
+
+###
+
+DELETE http://localhost:5000/logout
+
+
